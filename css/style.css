@@ -1,0 +1,224 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Nav Bar  */
+
+header {
+    height: 94px;
+    background-color: #562EFF;
+    margin-bottom: 36px;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.company-logo img {
+    width: 40.42px;
+    height: 51px;
+    margin-top: 23px;
+    margin-right: 10px;
+}
+
+.company-logo {
+    display: flex;
+}
+
+.company-logo h3 {
+    margin-top: 33px;
+    color: white;
+}
+
+.profile-section {
+    justify-content: space-between;
+    display: flex;
+}
+
+.profile-section a {
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+    margin-right: 36px;
+    margin-top: 15px;
+}
+
+.container {
+    background: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+
+/* top player  */
+
+.top-player {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+.players {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+
+/* top blogs styles */
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thamnil img {
+    width: 177px;
+    height: 117px;
+}
+
+.blogs-info {
+    margin-left: 16px;
+}
+
+.blogs-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+
+
+/* courses styles */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+}
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.fa-star.field {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+
+/* ---------------------------
+              Media Quary
+         ----------------------- */
+
+
+/* Mobile device */
+
+@media only screen and (max-width:688px) {
+    nav {
+        width: 70%;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+    }
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player {
+        flex-direction: column;
+    }
+    .player,
+    .blog,
+    .course {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+
+/* tablet device */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player {
+        flex-direction: column;
+    }
+}
